@@ -2,7 +2,7 @@
 
 ### 特性
 
-- 后端：flask框架 
+- 后端：flask框架
 - 前端：ant design pro v5
 - 向量数据库：milvus
 - 特征提取：towhee
@@ -20,6 +20,9 @@ docker-compose up -d
 
 容器运行成功后，访问：http://ip:8899/
 初始账号: admin 密码: admin
+
+### 演示地址
+> 在线试用演示地址：https://cas.luler.top/?search=636d2a970a26e
 
 # 使用截图
 
