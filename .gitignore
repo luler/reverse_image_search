@@ -2,7 +2,7 @@
 /.vscode
 *.log
 .DS_Store
-test.db
+*.sqlite
 .idea
 !.gitignore
 **/__pycache__
