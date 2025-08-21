@@ -33,10 +33,6 @@ RUN python -c "import os.path;import towhee;resnet50 = towhee.pipeline('towhee/i
     && find /root/.cache -type f -delete 2>/dev/null || true \
     && find /tmp -type f -delete 2>/dev/null || true
 
-# 创建非 root 用户（可选，提高安全性）
-RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /root/work
-USER appuser
-
 EXPOSE 5000
 
 CMD ["sh", "-c", "gunicorn -w ${WORKERS:-1} --threads ${THREADS:-2} -b 0.0.0.0:5000 app:app --preload"]
