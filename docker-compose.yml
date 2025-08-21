@@ -4,7 +4,7 @@ services:
     image: ghcr.io/luler/reverse_image_search:latest
     restart: always
     environment:
-      - JWT_SECRET=s@Q$eubj #安全起见，更换为复杂秘钥
+      - JWT_SECRET=PjfkEAwbH #安全起见，更换为复杂秘钥
     ports:
       - 4456:5000
     volumes:
