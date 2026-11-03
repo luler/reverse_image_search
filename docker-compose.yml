@@ -49,6 +49,10 @@ services:
     image: milvusdb/milvus:v2.1.4
     restart: always
     command: [ "milvus", "run", "standalone" ]
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
     logging:
       driver: json-file
       options:
